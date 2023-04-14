@@ -1,0 +1,30 @@
+@import 'variables';
+
+.sub-page-wrapper {
+  width: 100%;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  .sub-page-wrapper--nav {
+    background-color: $primary-dark-colour;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: $small-device) {
+  .sub-page-wrapper {
+    flex-direction: row;
+
+    > * {
+      flex: 3 7 auto;
+    }
+
+    .sub-page-wrapper--nav {
+      flex-basis: 300px;
+      max-width: 300px;
+      min-height: 50vh;
+    }
+  }
+}

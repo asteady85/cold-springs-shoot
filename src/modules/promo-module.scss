@@ -1,0 +1,9 @@
+.promo-module {
+  margin-top: 6rem;
+
+  .grid {
+    &.grid-gap {
+      grid-row-gap: 70px;
+    }
+  }
+}

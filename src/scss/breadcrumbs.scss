@@ -1,0 +1,31 @@
+@import 'variables';
+
+.breadcrumbs {
+  margin-bottom: 4rem;
+
+  h2, h3 {
+    display: block;
+    margin: 0;
+  }
+  h3 {
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (min-width: $small-device) {
+  .breadcrumbs {
+
+    h2, h3 {
+      display: inline-block;
+    }
+    h3 {
+      margin: 0;
+
+      &:before {
+        content: '>';
+        padding: 0 12px;
+        display: inline-block;
+      }
+    }
+  }
+}

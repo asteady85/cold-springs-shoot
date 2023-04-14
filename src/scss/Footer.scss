@@ -1,0 +1,28 @@
+@import 'variables';
+
+footer {
+  background: #252525;
+  width: 100%;
+  color: white;
+
+  .grid {
+    .col {
+      border-bottom: 1px solid white;
+
+      &:last-child {
+        border: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $small-device) {
+  footer {
+    .grid {
+      .col {
+        border-right: 1px solid white;
+        border-bottom: 0;
+      }
+    }
+  }
+}

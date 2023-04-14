@@ -1,0 +1,85 @@
+.horizontal-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-items: stretch;
+
+  &.full-height {
+    > div {
+      min-height: 100vh;
+    }
+    min-height: 100vh;
+  }
+
+  &.nav {
+    align-items: center;
+  }
+
+  &.align-center {
+    align-items: center;
+  }
+}
+
+.horizontal-block .horizontal-block-card {
+  //padding: 0.5rem 0.5rem 0.5rem 0;
+  //margin: 0 0 2rem;
+  position: relative;
+  flex: 1;
+
+  &.hide-mobile {
+    display: none;
+  }
+}
+
+.horizontal-block-card.col-span-2 { flex-basis: 50%; }
+.horizontal-block-card.col-span-3 { flex-basis: 100%; }
+.horizontal-block-card.col-span-4 { flex-basis: 50%; }
+.horizontal-block-card.col-span-5 { flex-basis: 100%; }
+
+.horizontal-block-card.col-grid-2 { flex-basis: 50%; }
+.horizontal-block-card.col-grid-3 { flex-basis: 100%; }
+.horizontal-block-card.col-grid-4 { flex-basis: 50%; }
+.horizontal-block-card.col-grid-5 { flex-basis: 100%; }
+.horizontal-block-card.col-grid-6 { flex-basis: 50%; }
+.horizontal-block-card.col-grid-7 { flex-basis: 100%; }
+.horizontal-block-card.col-grid-8 { flex-basis: 50%; }
+
+@media screen and (min-width: 700px) {
+  .horizontal-block {
+    flex-direction: row;
+
+    .horizontal-block-card {
+      &.hide-mobile {
+        display: block;
+      }
+    }
+
+    &.spaced .horizontal-block-card { margin-left: 8px; margin-right: 8px; }
+    &.spaced .horizontal-block-card:nth-child(1) { margin-left: 0; }
+    &.spaced .horizontal-block-card:last-child { margin-right: 0; }
+  }
+
+  .horizontal-block-card.col-span-3 { flex-basis: 37.5%; }
+  .horizontal-block-card.col-span-5 { flex-basis: 62.5%; }
+
+  .horizontal-block-card.col-grid-3 { flex-basis: 33.33333%; }
+  .horizontal-block-card.col-grid-4 { flex-basis: 25%; }
+  .horizontal-block-card.col-grid-5 { flex-basis: 20%; }
+  .horizontal-block-card.col-grid-6 { flex-basis: 33.33333%; }
+  .horizontal-block-card.col-grid-7 { flex-basis: 20%; }
+  .horizontal-block-card.col-grid-8 { flex-basis: 25%; }
+}
+
+@media screen and (min-width: 1200px) {
+  .horizontal-block-card.col-span-4 { flex-basis: 25%; }
+  .horizontal-block-card.col-span-5 { flex-basis: 62.5%; }
+  .horizontal-block-card.col-span-6 { flex-basis: 75%; }
+  .horizontal-block-card.col-span-7 { flex-basis: 87.5%; }
+  .horizontal-block-card.col-span-8 { flex-basis: 100%; }
+
+  .horizontal-block-card.col-grid-6 { flex-basis: 16.66666%; }
+  .horizontal-block-card.col-grid-7 { flex-basis: 14.285%; }
+  .horizontal-block-card.col-grid-8 { flex-basis: 12.5%; }
+}
