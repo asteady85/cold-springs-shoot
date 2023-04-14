@@ -12,9 +12,9 @@ interface propTypes {
 }
 const Input = ({ label, type, placeholder, name, value, icon, handleChange }: propTypes): JSX.Element => {
   return (
-    <div className='form-group'>
-      <label htmlFor={name}>{label}</label>
+    <>
       <span className='icon'>{icon}</span>
+      <label htmlFor={name}>{label}</label>
       <input
         type={type}
         name={name}
@@ -22,7 +22,7 @@ const Input = ({ label, type, placeholder, name, value, icon, handleChange }: pr
         placeholder={placeholder}
         onChange={(e) => handleChange(e.target.value, name)}
       />
-    </div>
+    </>
   )
 }
 

@@ -1,12 +1,14 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import ContactViewModel from './ViewModel'
 import SubHero from '../../SubHero'
 import Input from '../components/form/Input'
 import { User } from '@styled-icons/fa-solid/User'
+
 import view from '../../images/view.jpg'
+import '../../modules/enquiry-form.scss'
 
 const Contact = (): JSX.Element => {
-  const { full_name, onChange } = ContactViewModel()
+  const { full_name, phone, email, onChange } = ContactViewModel()
 
   return (
     <>
@@ -38,17 +40,25 @@ const Contact = (): JSX.Element => {
           <p>Cold Springs Farm,<br />Manchester Road,<br />Longhill,<br />Buxton,<br />SK17 6SS</p>
 
           <form>
-            <Input
-              label='Full Name'
-              type='text'
-              name='full_name'
-              value={full_name}
-              handleChange={onChange}
-              icon={<User />}
-              placeholder='Full Name'
-            />
-        {/*    <Input label='Email Address' type='text' name='email' value={} icon={} />*/}
-        {/*    <Input label='Tel No' type='text' name='phone' value={} icon={} />*/}
+            <div className='form-row'>
+              <div className='col-span-2'>
+                <Input
+                  label='Full Name'
+                  type='text'
+                  name='full_name'
+                  value={full_name}
+                  handleChange={onChange}
+                  icon={<User />}
+                  placeholder='Full Name'
+                />
+              </div>
+              <div className='col-span-2'>
+                <Input label='Tel No' type='text' name='phone' value={phone} icon={<User />} handleChange={onChange} />
+              </div>
+            </div>
+            <div className='form-row'>
+              <Input label='Email Address' type='text' name='email' value={email} icon={<User />} handleChange={onChange} />
+            </div>
           </form>
         </div>
       </div>

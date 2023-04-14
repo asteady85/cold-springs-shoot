@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 
 const ContactViewModel = () => {
-  const [error, setError] = useState("")
+  // const [error, setError] = useState("")
   const [values, setValues] = useState({
-    full_name: ""
+    full_name: "",
+    phone: "",
+    email: ""
   })
 
   function onChange(value, prop) {
@@ -12,8 +14,9 @@ const ContactViewModel = () => {
   }
 
   async function emailEnquiry() {
-    const { result, error } = await createProductUseCase(values)
-    setError(error)
+    // const { result, error } = await createProductUseCase(values)
+    // setError(error)
+    // post to email form
   }
 
   return {
