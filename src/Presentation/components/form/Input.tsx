@@ -8,7 +8,7 @@ interface propTypes {
   name: string,
   value: string,
   icon: ReactElement,
-  handleChange: (value: string) => void
+  handleChange: (value: string, prop: string) => void
 }
 const Input = ({ label, type, placeholder, name, value, icon, handleChange }: propTypes): JSX.Element => {
   return (
@@ -20,7 +20,7 @@ const Input = ({ label, type, placeholder, name, value, icon, handleChange }: pr
         name={name}
         value={value}
         placeholder={placeholder}
-        onChange={(e) => handleChange(e.target.value)}
+        onChange={(e) => handleChange(e.target.value, name)}
       />
     </div>
   )

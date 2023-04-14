@@ -1,19 +1,12 @@
 import React, {useEffect, useState} from 'react'
-import useViewModel from './ViewModel'
+import ContactViewModel from './ViewModel'
 import SubHero from '../../SubHero'
-import view from '../../images/view.jpg'
 import Input from '../components/form/Input'
 import { User } from '@styled-icons/fa-solid/User'
-// import List from "../../../components/List"
-// import Button from "../../../components/Button"
+import view from '../../images/view.jpg'
 
 const Contact = (): JSX.Element => {
-  const [val, setVal] = useState('')
-  // const { products, getProducts } = useViewModel()
-
-  // useEffect(() => {
-  //   getProducts()
-  // }, [])
+  const { full_name, onChange } = ContactViewModel()
 
   return (
     <>
@@ -49,10 +42,10 @@ const Contact = (): JSX.Element => {
               label='Full Name'
               type='text'
               name='full_name'
-              value={val}
+              value={full_name}
+              handleChange={onChange}
               icon={<User />}
               placeholder='Full Name'
-              handleChange={setVal}
             />
         {/*    <Input label='Email Address' type='text' name='email' value={} icon={} />*/}
         {/*    <Input label='Tel No' type='text' name='phone' value={} icon={} />*/}
