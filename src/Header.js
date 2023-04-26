@@ -30,7 +30,10 @@ const Header = () => {
           </div>
           <div className="show--desktop">
             <nav>
-              <HorizontalBlock classes="nav" items={[pageLink('Home', '/'), pageLink('About', '/about'), pageLink('Stag/Hen Parties', '/stag-hen-events'), pageLink('Corporate', '/corporate-events'), pageLink('Contact', '/contact'), socialMediaLinks()]} />
+              <HorizontalBlock
+                classes="nav"
+                items={[pageLink('Home', '/'), pageLink('About', '/about'), pageLink('Stag/Hen Parties', '/stag-hen-events'), pageLink('Corporate', '/corporate-events'), pageLink('Sim Days', '/simulated-game-days'), pageLink('Contact', '/contact'), socialMediaLinks()]}
+              />
             </nav>
           </div>
           <div className='show--mobile'>
@@ -46,6 +49,7 @@ const Header = () => {
                 { pageLink('About', '/about') }
                 { pageLink('Stag/Hen Parties', '/stag-hen-events') }
                 { pageLink('Corporate Events', '/corporate-events') }
+                { pageLink('Sim Days', '/simulated-game-days') }
                 { pageLink('Contact', '/contact') }
               </div>
             )

@@ -14,6 +14,7 @@ const Contact = lazy(() => import('./Presentation/Contact/Contact'))
 const About = lazy(() => import('./Presentation/About/About'))
 const HenStagParty = lazy(() => import('./pages/HenStagParty'))
 const CorporateEvents = lazy(() => import('./pages/Corporate'))
+const SimGameDay = lazy(() => import('./Presentation/SimGameDay/SimGameDay'))
 import './App.scss'
 
 const App = (): JSX.Element => {
@@ -28,6 +29,7 @@ const App = (): JSX.Element => {
               <Route path='/about' element={<About />} />
               <Route path='/stag-hen-events' element={<HenStagParty />} />
               <Route path='/corporate-events' element={<CorporateEvents />} />
+              <Route path='/simulated-game-days' element={<SimGameDay />} />
               <Route path='/' element={<Home />} />
               {/* 404 */}
               <Route path='*' element={<Home />} />
