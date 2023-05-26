@@ -1,0 +1,10 @@
+.star-rating {
+  svg {
+    width: 30px;
+    color: #666;
+
+    &.fill {
+      color: gold;
+    }
+  }
+}

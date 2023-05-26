@@ -37,16 +37,20 @@
     }
 
     &.corporate-price {
-      border-color: #0ec87e;
-      .price-list--details--headline { background: #0ec87e; }
+      border-color: #578a76;
+      .price-list--details--headline { background: #578a76; }
     }
     &.shooting-price {
-      border-color: #C84F0E;
-      .price-list--details--headline { background: #C84F0E; }
+      border-color: #51547d;
+      .price-list--details--headline { background: #51547d; }
+    }
+    &.sim-days {
+      border-color: #af7024;
+      .price-list--details--headline { background: #af7024; }
     }
     &.other-price {
-      border-color: #2452C7;
-      .price-list--details--headline { background: #2452C7; }
+      border-color: #ae4f25;
+      .price-list--details--headline { background: #ae4f25; }
     }
   }
 }

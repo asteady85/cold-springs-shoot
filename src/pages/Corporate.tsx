@@ -43,7 +43,7 @@ const CorporateEvents  = (): JSX.Element => {
         <h1>Corporate Days Out<br /><span className='thin'>Nothing says great team building quite like clay pigeon shooting!</span></h1>
       </SubHero>
       <div className='content'>
-        <div className='content--wrapper'>
+        <div className='content--wrapper padd'>
           <h2>Private & Corporate <span className='brand-dark-colour thin'>Events</span></h2>
           <p>In the beautiful Derbyshire hills, overlooking Buxton, Cold Springs Farm can provide outstanding Private and Corporate clay shooting events for 10 to 100 guests.</p>
           <p>Our clay pigeon shooting events have everything you need for a truly memorable experience, from the clay shooting right through to the delicious meals form our cafe. It has proven time and time again to be an exciting private or corporate event because everyone can take part and best of all, no experience is necessary! The professional instructors at Cold Springs Farm will ensure that everyone has a fantastic time and receive expert tuition. We have an extensive range of shotguns available to suit all shapes and sizes, as well as having specially loaded cartridges which give less recoil. Each stand has multiple traps which means that mixed abilities can be in the same team and still be individually tested by different difficulties of clay targets, tailored to the individual – so no more feeling like you’re in the wrong team!</p>

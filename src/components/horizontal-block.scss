@@ -50,6 +50,8 @@
   .horizontal-block {
     flex-direction: row;
 
+    &.reverse { flex-direction: row-reverse; }
+
     .horizontal-block-card {
       &.hide-mobile {
         display: block;

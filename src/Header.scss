@@ -39,7 +39,7 @@ header.wrapper {
 
       svg {
         width: 4rem;
-        color: $primary-dark-colour;
+        color: black; // $primary-dark-colour
       }
 
       a.tel svg { rotate: 90deg; }

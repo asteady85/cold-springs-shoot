@@ -9,7 +9,7 @@ const Contact = () => {
         <p>Cold Springs Farm</p>
       </SubHero>
       <div className='content'>
-        <div className='content--wrapper'>
+        <div className='content--wrapper padd'>
           <h2>Get <span className='brand-dark-colour thin'>In Touch</span></h2>
           <table>
             <tbody>

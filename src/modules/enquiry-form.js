@@ -35,7 +35,10 @@ const EnquiryForm = () => (
             <option value='general'>Other/General</option>
           </select>
         </div>
-        <div className='col-span-2'></div>
+        <div className='col-span-2'>
+          <label>Telephone No.</label>
+          <input type='tel' name='phone' value='' />
+        </div>
       </div>
 
       <div className='form-row'>

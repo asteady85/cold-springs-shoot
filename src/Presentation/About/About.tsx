@@ -10,7 +10,7 @@ const About = (): JSX.Element => {
         <h1>About Us<br /><span className='thin'>Clay pigeon shooting for all ages and experience</span></h1>
       </SubHero>
       <div className='content'>
-        <div className='content--wrapper'>
+        <div className='content--wrapper padd'>
           <h2>About <span className='brand-dark-colour thin'>Cold Springs Farm</span></h2>
           <img src={bg2} alt='Cold Springs Farm' className='inline-img inline-img-right inline-img-medium' />
           <p>Cold Springs Farm Campsite is a working farm located near to Buxton, a spa town at the heart of the Peak District National Park.<br />The campsite provides lovely views across Buxton and the surrounding countryside.</p>
@@ -20,18 +20,17 @@ const About = (): JSX.Element => {
             <li>On-Site Parking</li>
             <li>Toilets</li>
             <li>Safety Equipment Provided</li>
-            <li>Fully licensed bar that seres food</li>
+            <li>Fully licensed bar that serves food</li>
             <li>Guns/bullets etc... provided</li>
             <li>Fully qualified Instructors</li>
           </ul>
 
-          <div className='content'>
-            <h2>The <span className='brand-dark-colour thin'>Shooting</span></h2>
-            <p>Clay Shooting is a thrilling sport for people of all ages. It is an ideal activity if you want to entertain friends, learn a new skill and have some fun!</p>
-            <p>Clay Shooting instruction takes place individually or in small groups by one of our friendly and experienced Coaches. Prior to starting, your designated Instructor will give you a full safety briefing followed by excellent tuition, ensuring that you hit a range of targets during your session.</p>
-            <p>Our excellent Clay Shooting facilities make us the ideal destination for corporate events, team building days, outdoor experience days and private groups and lessons. Clay Shooting Gift Vouchers also make for great gift Experience days for friends, family and colleagues. If you’re looking for some fun in the country then try Clay Shooting! It’s a great experience and a fun traditional country sport to try. And who knows, you may unlock a hidden talent!</p>
-            <p>For Licence holders who own their own shotgun, we hold an Open Practice Day every Wednesday between 10am and 4pm. Competitions take place every month, with fixtures and results available to view on our News & Events section (see top of page or on homepage).</p>
-          </div>
+          <div className='clear' />
+          <h2>The <span className='brand-dark-colour thin'>Shooting</span></h2>
+          <p>Clay Shooting is a thrilling sport for people of all ages. It is an ideal activity if you want to entertain friends, learn a new skill and have some fun!</p>
+          <p>Clay Shooting instruction takes place individually or in small groups by one of our friendly and experienced Coaches. Prior to starting, your designated Instructor will give you a full safety briefing followed by excellent tuition, ensuring that you hit a range of targets during your session.</p>
+          <p>Our excellent Clay Shooting facilities make us the ideal destination for corporate events, team building days, outdoor experience days and private groups and lessons. Clay Shooting Gift Vouchers also make for great gift Experience days for friends, family and colleagues. If you’re looking for some fun in the country then try Clay Shooting! It’s a great experience and a fun traditional country sport to try. And who knows, you may unlock a hidden talent!</p>
+          <p>For Licence holders who own their own gun, we hold a 75 bird competition on the first and last Sunday of every month.</p>
 
           <h2>The <span className='brand-dark-colour thin'>Local Area</span></h2>
           <p>Cold Springs Farm Campsite is located in the heart of the Peak District surrounded by the National Park itself and within easy reach of a wealth of attractions. </p>
