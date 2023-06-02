@@ -117,9 +117,10 @@ const Home = () => {
           <HorizontalBlock classes='spaced' items={
             [
               {
+                blockClass: 'col-grid-4',
                 content: (<PriceList
-                  heading='Monthly Shooting Days'
-                  price={(<>£70 pp</>)}
+                  heading='Shooting Days'
+                  price={(<>£70<span className='small'>pp</span></>)}
                   description={(<>75 bird competition on the first and last Sunday of every month</>)}
                   brand='shooting-price'
                 >
@@ -130,12 +131,17 @@ const Home = () => {
                     <li>Fibre wads only</li>
                     <li>Fab breakfasts and cakes</li>
                   </ul>
+
+                  <div className='text-center'>
+                    <Link to='/contact'><button>Find out more</button></Link>
+                  </div>
                 </PriceList>)
               },
               {
+                blockClass: 'col-grid-4',
                 content: (<PriceList
                   heading='Corporate Event'
-                  price={(<><small>From</small> £90 pp</>)}
+                  price={(<>£90<span className='small'>pp</span></>)}
                   description={(<>This is the description about the offer</>)}
                   brand='corporate-price'
                 >
@@ -153,10 +159,11 @@ const Home = () => {
                 </PriceList>)
               },
               {
+                blockClass: 'col-grid-4',
                 content: (
                   <PriceList
                     heading='Hen/Stag Party'
-                    price={(<>£70 pp</>)}
+                    price={(<>£70<span className='small'>pp</span></>)}
                   >
                     <>
                       <ul className="list-style-none">
@@ -174,22 +181,22 @@ const Home = () => {
                 )
               },
               {
+                blockClass: 'col-grid-4',
                 content: (
                   <PriceList
                     heading='Sim Game Days'
-                    price={(<>&pound;215 pp</>)}
+                    price={(<>&pound;215<span className='small'>pp</span></>)}
                     brand='sim-days'
                   >
                     <>
                       <ul className="list-style-none">
-                        <li className="position-relative">Some feature 1</li>
-                        <li className="position-relative">Some feature 2</li>
-                        <li className="position-relative">Some feature 3</li>
-                        <li className="position-relative">Some feature 4</li>
-                        <li className="position-relative">Some feature 5</li>
+                        <li className="position-relative">5 Drives set over a 10km radius</li>
+                        <li className="position-relative">Quarry including Grouse, Pheasant and Partridge</li>
+                        <li className="position-relative">16 gun minimum</li>
+                        <li className="position-relative">Breakfast, snacks and lunch included</li>
                       </ul>
                       <div className='text-center'>
-                        <Link to='/stag-hen-events'><button>Find out more</button></Link>
+                        <Link to='/simulated-game-days'><button>Find out more</button></Link>
                       </div>
                     </>
                   </PriceList>
